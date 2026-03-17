@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --pink: #FF3CAC; --orange: #FF6B35; --yellow: #FFE600;
+  --green: #00F5A0; --blue: #00D9FF; --purple: #9B5DE5;
+  --dark: #080810; --card: #0F0F1A; --card2: #13131F; --border: #1E1E30;
+  --grad: linear-gradient(135deg, #FF3CAC, #FF6B35);
+}
+html, body { height: 100%; background: var(--dark); font-family: 'Nunito', sans-serif; color: #fff; overflow-x: hidden; }
+::-webkit-scrollbar { width: 3px; } ::-webkit-scrollbar-thumb { background: #2a2a3e; border-radius: 4px; }
+textarea { resize: none; font-family: inherit; } textarea:focus { outline: none; }
+button { font-family: inherit; cursor: pointer; }
+input { font-family: inherit; } input:focus { outline: none; }
+a { text-decoration: none; color: inherit; }
+
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@keyframes shimmer { 0%{background-position:-200% center} 100%{background-position:200% center} }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+@keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+@keyframes slideUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
